@@ -1,0 +1,1065 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Responsive jQuery & css3 Navigation plugin </title>
+<link href="css/scriptsellMenu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/scriptsellMenu.js"></script>
+<style type="text/css">
+body{font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.sp{ clear:both; height:20px;}
+.html_content{ color:#FFF; font-size:12px;}
+label {
+	display:block;
+	margin-top:20px;
+	letter-spacing:2px;
+}
+
+input, textarea {
+	width:300px;
+	height:27px;
+	background:#efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+	input:focus, textarea:focus {
+		border:1px solid #97d6eb;
+	}
+
+textarea {
+	height:213px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+	background:#FFF;
+	width:127px;
+	height:38px;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+	color:#000;
+	display:block;
+}
+
+	#submit:hover {
+		opacity:0.9;
+	}
+
+footer a img {
+	border:none;
+	float:right;
+	margin:0px 59px 40px 0px;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function () {
+	$(".nav1").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'light-brown',
+		animation:'slide',
+		arrow:true,
+		tooltrip:'bottom',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+	
+	$(".nav2").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'deep-blue',
+		animation:'slide-top',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});	
+	$(".nav3").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'apple-green',
+		animation:'bounce',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+	$(".nav4").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'pink',
+		animation:'zoom',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});		
+});
+
+</script>
+</head>
+
+
+<ul class="nav1">
+	<li><a href="#">Home</a>
+    	<ul>
+            <li><div style="padding-bottom:1px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             Lorem Ipsum has been the industry's </div> </li>
+        </ul>
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li><a href="#">Single dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+            <li><a href="#">dropdown-5</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	 <li><a href="#">dropdown-1</a></li>
+             <li><a href="#">dropdown-2</a>
+                <ul>
+                        <li><a href="#">dropdown-1</a></li>
+                        <li><a href="#">dropdown-2</a></li>
+                        <li><a href="#">dropdown-3</a></li>
+                        <li><a href="#">dropdown-4</a></li>
+                        <li><a href="#">dropdown-5</a></li>
+                        <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                            <li><a href="#">dropdown-5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">3docean</a></li>
+                    <li><a href="#">photodune</a></li>
+                </ul>
+            </li>
+             <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-2</a>
+            <ul>
+               <li><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+            <li><a href="#">dropdown-5</a></li>
+            <li><a href="#">dropdown-5</a></li>
+            </ul>
+            </li>
+           <li><a href="#">dropdown-5</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li data-align="right"><a href="#">Contact us</a>
+    <ul><li>
+        <form>
+        <label>Name</label>
+        <input name="name" placeholder="Type Here"> 
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit">
+        </form>
+    </li></ul>
+    
+    </li>
+</ul>
+<br />
+<br />
+
+<ul class="nav2">
+	<li data-tool="Lorem Ipsum is simply dummy"><a href="#">Home</a>
+    	<ul>
+            <li><div style="padding-bottom:1px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             Lorem Ipsum has been the industry's </div> </li>
+        </ul>
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">dropdown</a>
+    	<ul>
+            <li><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a>
+                <ul>
+                    <li><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li data-tool="Plz check Out Youtube Embed"><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li data-align="right"><a href="#">Contact us</a>
+    <ul><li>
+        <form>
+        <label>Name</label>
+        <input name="name" placeholder="Type Here"> 
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit">
+        </form>
+    </li></ul>
+    
+    </li>
+</ul>
+<br />
+<br />
+
+<ul class="nav3">
+	<li data-tool="Lorem Ipsum is simply dummy"><a href="#">Home</a>
+    	<ul>
+            <li><div style="padding-bottom:1px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             Lorem Ipsum has been the industry's </div> </li>
+        </ul>
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">dropdown</a>
+    	<ul>
+            <li><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a>
+                <ul>
+                    <li><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li data-tool="Plz check Out Youtube Embed"><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li data-align="right"><a href="#">Contact us</a>
+    <ul><li>
+        <form>
+        <label>Name</label>
+        <input name="name" placeholder="Type Here"> 
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit">
+        </form>
+    </li></ul>
+    
+    </li>
+</ul><br />
+<br />
+
+<ul class="nav4">
+	<li data-tool="Lorem Ipsum is simply dummy"><a href="#">Home</a>
+    	<ul>
+            <li><div style="padding-bottom:1px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             Lorem Ipsum has been the industry's </div> </li>
+        </ul>
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">dropdown</a>
+    	<ul>
+            <li><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a>
+                <ul>
+                    <li><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li data-tool="Plz check Out Youtube Embed"><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li data-align="right"><a href="#">Contact us</a>
+    <ul><li>
+        <form>
+        <label>Name</label>
+        <input name="name" placeholder="Type Here"> 
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit">
+        </form>
+    </li></ul>
+    
+    </li>
+</ul>
+<br />
+<br />
+
+<ul class="nav4">
+	<li data-tool="Lorem Ipsum is simply dummy" data-bg="#6a1cc9"><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy" data-bg="#002e72"><a href="#">dropdown</a>
+    	<ul>
+            <li  data-bg="#002e72"><a href="#">dropdown-1</a></li>
+            <li  data-bg="#002e72"><a href="#">dropdown-2</a></li>
+            <li data-bg="#207200"><a href="#">dropdown-3</a></li>
+            <li data-bg="#207200"><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy" data-bg="#207200"><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li data-bg="#6a1cc9"><a href="#">dropdown-4</a></li>
+            <li  data-bg="#6a1cc9"><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li data-bg="#aeae00"><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li data-bg="#929292"><a href="#">Contact us</a> </li>
+</ul><br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav11").scriptsellMenu({
+		animationSpeed:150,
+
+		theme:'light-sky-blue',
+		animation:'fadeinout',
+		arrow:false,
+		tooltrip:'rotate',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav11">
+	<li data-tool="Lorem Ipsum is simply dummy"><a href="#">Home</a>
+    	<ul>
+            <li><div style="padding-bottom:1px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             Lorem Ipsum has been the industry's </div> </li>
+        </ul>
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">dropdown</a>
+    	<ul>
+            <li><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li data-tool="Lorem Ipsum is simply dummy"><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a>
+                <ul>
+                    <li><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li data-tool="Plz check Out Youtube Embed"><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li data-align="right"><a href="#">Contact us</a>
+    <ul><li>
+        <form>
+        <label>Name</label>
+        <input name="name" placeholder="Type Here"> 
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit">
+        </form>
+    </li></ul>
+    
+    </li>
+</ul>
+<br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav5").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'deep-blue',
+		animation:'fadeinout',
+		arrow:true,
+		tooltrip:'bottom',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav5">
+	<li ><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li ><a href="#">dropdown</a>
+    	<ul>
+            <li ><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li ><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact us</a> </li>
+</ul>
+
+<br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav6").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'black',
+		animation:'zoom',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav6">
+	<li ><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li ><a href="#">dropdown</a>
+    	<ul>
+            <li ><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li ><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact us</a> </li>
+</ul>
+
+<br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav7").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'light-grey',
+		animation:'none',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav7">
+	<li ><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li ><a href="#">dropdown</a>
+    	<ul>
+            <li ><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li ><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact us</a> </li>
+</ul>
+
+<br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav8").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'orange',
+		animation:'none',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav8">
+	<li ><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li ><a href="#">dropdown</a>
+    	<ul>
+            <li ><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li ><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact us</a> </li>
+</ul>
+
+<br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav9").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'light-brown',
+		animation:'none',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav9">
+	<li ><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li ><a href="#">dropdown</a>
+    	<ul>
+            <li ><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li ><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact us</a> </li>
+</ul>
+
+
+<br />
+<br />
+<script type="text/javascript">
+$( document).ready(function(e) {
+    $(".nav10").scriptsellMenu({
+		animationSpeed:150,
+		animationForm:'top',
+		theme:'amethyst',
+		animation:'none',
+		arrow:true,
+		tooltrip:'top',
+		hoverelements:'<span>',
+		responsivemenutext:'Reponsive menu',
+		dropdownWidth:250,
+		menuheight:37,
+		deviceswidth:768
+	});
+});
+</script>
+<ul class="nav10">
+	<li ><a href="#">Home</a>
+    	
+        <ul>
+        	<li><a href="#">item1</a> </li>
+            <li><a href="#">item2</a> </li>
+            <li><a href="#">item2</a> </li>
+        </ul>
+    </li>
+    <li ><a href="#">dropdown</a>
+    	<ul>
+            <li ><a href="#">dropdown-1</a></li>
+            <li><a href="#">dropdown-2</a></li>
+            <li><a href="#">dropdown-3</a></li>
+            <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Multi level dropdown</a>
+    	<ul>
+        	<li><a href="#">dropdown-4</a></li>
+            <li ><a href="#">dropdown-5</a>
+                <ul>
+                    <li  data-bg="#6a1cc9"><a href="#">dropdown-1</a></li>
+                    
+                    <li><a href="#">dropdown-5</a>
+                        <ul>
+                            <li><a href="#">dropdown-1</a></li>
+                            <li><a href="#">dropdown-2</a></li>
+                            <li><a href="#">dropdown-3</a></li>
+                            <li><a href="#">dropdown-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dropdown-4</a></li>
+                    <li><a href="#">dropdown-4</a></li>
+                </ul>
+            </li>
+           <li><a href="#">dropdown-4</a></li>
+            <li><a href="#">dropdown-4</a>
+            <ul>
+                <li><a href="#">dropdown-1</a></li>
+                <li><a href="#">dropdown-2</a></li>
+                <li><a href="#">dropdown-3</a></li>
+                <li><a href="#">dropdown-4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">dropdown-1</a></li>
+              
+        </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Youtube Embed</a>
+    	<ul>
+        	<li><iframe width="560" height="315" src="http://www.youtube.com/embed/JuyB7NO0EYY" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact us</a> </li>
+</ul>
+</body>
+</html>
