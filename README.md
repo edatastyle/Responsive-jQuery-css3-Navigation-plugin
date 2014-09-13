@@ -1,7 +1,7 @@
 Responsive-jQuery-css3-Navigation-plugin
 ========================================
 
-<a href="http://scriptsell.net/dropdownmenu/">Demo</a>
+<a href="http://scriptsell.net/dropdownmenu/" target="_blank">Demo</a>
 
 This Responsive jQuery & css3 Navigation plugin dropdown menu has it all. drop down menu structure will keep your users on target. dropdown menu is easy to edit and integrate into any website. dropdown menu has 12 Theme colors, each theme can be used separately without any connection with the others and very easy to update new navigation theme. Menu is responsible and adapts to the screen of the device(computer monitor, tablet, mobile phone) ! also you can use tool trip and multi color on each navigation
 
